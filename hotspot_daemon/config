@@ -1,0 +1,21 @@
+#global configurations
+app=tharaka
+timer=1
+#mikrotik Configurations
+mikrotik_site=embu
+mikrotik_host=172.168.88.1
+mikrotik_port=8728
+mikrotik_user=admin
+mikrotik_password=surf@wifi
+mikrotik_profile=3mbps
+mikrotik_limit_uptime=0d 00:30:00
+#remote database configuration
+get_customer_url=http://185.203.117.51/hotspot/customer-get.php
+update_customer_url=http://185.203.117.51/hotspot/customer-update.php
+db_host=
+db_name=
+db_user=
+db_pass=
+bucket=10
+#log path
+log=.

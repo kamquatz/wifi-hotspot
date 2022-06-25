@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Tab : Demo 35</title>
+            <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+            <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+            <link rel="stylesheet" href="css/bootstrap.min.css" />
+            <link rel="stylesheet" href="css/common.css"/>
+            <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+
+        <div class="row text-center header">
+            <h4>M-Tech WIFI Hotspot Login Page</h4>
+        </div>
+        
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="tab" role="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Mobile Money</a></li>
+                                <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">PayBill</a></li>
+                                <li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Watch Ad</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab fade in active" id="Section1">
+                                    <blockquote class="small">       
+                                        <ul class="list-unstyled">
+                                            <li>Enter Paying MPesa Phone Number</li>
+                                            <li>Select a Package Below</li>
+                                            <li>Use your Service PIN to authorize the transaction</li>
+                                        </ul>
+                                    </blockquote>
+                                    <div class="text-center">
+                                        <form id="stk" name="stk">
+                                            <div class="form-group">
+                                                <label for="phone">Paying Phone Number:</label>
+                                                <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone Number" required />
+                                            </div>                                            
+                                            <input type="hidden" id="amount" name="amount" />
+                                            <button type="submit" class="btn btn-sm btn-danger btn-outline pull-left" onclick="setAmount(20)">
+                                                Pay<br />
+                                                20 bob<br />
+                                                <small>Get One Day</small>
+                                            </button>
+                                            <button type="submit" class="btn btn-sm btn-primary btn-outline" onclick="setAmount(120)">
+                                                Pay<br />
+                                                120 bob<br />
+                                                <small>Get One Week</small>
+                                            </button>
+                                            <button type="submit" class="btn btn-sm btn-success btn-outline pull-right" onclick="setAmount(500)">
+                                                Pay<br />
+                                                500 bob<br />
+                                                <small>Get One Month</small>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    
+                                    <br /><small class="pull-right">Normal MPESA Charges apply</small>
+                                </div>
+                                
+                                <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                    
+                                    
+                                    
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                                <hr />
+                                <blockquote class="small">       
+                                    <ul class="list-unstyled">
+                                        <li>By Connecting to MTech WIFI you agree to <a href="#">M-Tech Hotspot Terms and Conditions</a></li>
+                                    </ul>
+                                </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--js-->
+        <script src="js/md5.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

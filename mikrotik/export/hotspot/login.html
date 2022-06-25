@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="title">M-Tech WIFI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="theme-color" content="#d0d2d6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" type="text/css" href="css/vanzj.css">
+    <style type="text/css">
+        bdy{
+            background-image: url("img/background.PNG");
+        };
+        body{
+            background-color: black;
+            color: black;
+        }
+        video {
+          /* override other styles to make responsive */
+          width: 100%    !important;
+          height: auto   !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="grid"></div>
+       
+  <div class="bg" >
+    
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+
+        <script type="text/javascript" src="md5.js"></script>
+        <script type="text/javascript">
+            function doLogin() {
+                document.sendin.username.value = document.login.username.value;
+                document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value +
+                    '$(chap-challenge)');
+                document.sendin.submit();
+                return false;
+            }
+        </script>
+          
+            <div id="main" class="main">
+            <div class="box">
+                 <img src="img/logo3.png" width="200" height="110" >
+            </div>
+            <div class="container" style="background-image: url('img/background.PNG'); background-repeat: no-repeat; color: black; font-weight: bold;">
+
+                <!--Below line is the Running Banner Text-->
+                <marquee HSPACE="-45" vspace="" behavior="" height="20" text-align=bottom><font color=black>
+                    <div>Watch below video to Enjoy FREE WIFI - Connect Button will appear after video has ended</div>
+                </font></marquee>
+                <!--Above line is the Running Banner Text-->
+                <br>
+
+                <video id="ad_video" controls muted defaultmuted playsinline>
+                    <source src="ads/vid.mp4" type="video/mp4">
+                </video>
+
+                <script>
+                    var ad_video = document.getElementById("ad_video");
+                    window.addEventListener("click", () => {
+                      ad_video.muted = !ad_video.muted;
+                    }, { once: true });
+
+                    var ad_viewed = sessionStorage.getItem("ad_viewed")==null ? 0 : sessionStorage.getItem("ad_viewed");
+
+                    ad_video.play();
+                    ad_video.onended = function() {
+                        ad_viewed++;
+                        sessionStorage.setItem("ad_viewed",ad_viewed);
+                        sessionStorage.setItem("last_ad_viewed",Date.now());
+                        document.getElementById("submit_btn").style.visibility = 'visible';
+                    };
+                </script>
+                <br>
+            <form autocomplete="off" id="login" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                $(endif)>
+                <div class="blinking" id="infologin">Then Enter PhoneNumber and tap Connect</div>
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+                <input class="username" name="username" type="text" placeholder="PhoneNumber" />
+                <input class="password" name="password" placeholder="Password" type="hidden" />
+                <button id="submit_btn" name="submit_btn" class="button" type="submit">Connect</button>
+                $(if error)<input class="notice" name="notice" value="$(error)" type="hidden" />$(endif)
+
+            </form>
+            <div>
+                <br />
+                <!--Sliding Picture Start-->
+                <div class="slidingImage">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <input type="radio" name="radio-btn" id="radio5">
+
+                            <!-- 700 x 350 pixels .jpg -->
+                            <div class="slide first"><img src="/ads/1.jpg"></div>
+                            <div class="slide"><img src="ads/2.jpg"></div>
+                            <div class="slide"><img src="ads/3.jpg"></div>
+                            <div class="slide"><img src="ads/4.jpg"></div>
+                            <div class="slide"><img src="ads/5.jpg"></div>
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                                <div class="auto-btn5"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        var counter=1;
+                        setInterval(function(){
+                            document.getElementById('radio' + counter).checked =true;
+                            counter++;
+                            if (counter > 5){
+                                counter = 1;
+                                setInterval=1000;
+                            }
+                        },3000);
+                    </script>
+                </div>
+                <br>
+                <div>
+                    <font class="blinking1" style="font-weight: bold">
+                        To advertise on the above space - video and images - contact 0793 711 418 / 0700 300 250</font>
+                </div>
+        </div>
+        </div>
+        </div>
+
+        <script type="text/javascript" src="md5.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            document.getElementById("submit_btn").style.visibility = 'hidden';
+            document.login.username.focus();
+
+            //var addUserEndpoint = 'http://192.168.12.167/admin/customer-add.php';
+            var addUserEndpoint = 'http://172.20.20.2/wifi/admin/customer-add.php';
+
+            var username = document.login.username;
+            var password = document.login.password;
+
+            // set password = username
+            function setpass() {
+                var user = username.value
+                username.value = user;
+                password.value = user;
+                sessionStorage.setItem("amount",0);
+                sessionStorage.setItem("phone",'254'+user.slice(-9));
+            }
+
+            username.onkeyup = setpass;
+
+            var notice = document.login.notice;
+            if(notice.value){
+                document.getElementById("submit_btn").style.visibility = 'visible';
+                let phone = sessionStorage.getItem("phone")!==null ? sessionStorage.getItem("phone") : '';
+                let last_ad_viewed = sessionStorage.getItem("last_ad_viewed")!==null ? sessionStorage.getItem("last_ad_viewed") : Date.now();
+                let timeLapsed = (Date.now()-last_ad_viewed)/1000;
+                username.value = phone;
+
+                if(phone.length==12 && timeLapsed<3600){
+                    AddUser(sessionStorage.getItem("amount"),sessionStorage.getItem("phone"));
+                }else{
+                    alert('Kindly Enter Valid Phone Number');
+                }
+            }
+
+            //add user to mikrotik
+            function AddUser(amount,phone){
+                $.post(addUserEndpoint,
+                      {
+                          phone: phone,
+                          amount: amount
+                      },
+                      function(data, status){
+                        //console.log("Data: " + data + "\nStatus: " + status);
+                });
+            }
+
+        </script>
+
+    </body>
+
+</html>

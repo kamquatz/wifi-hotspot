@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Surf Wi-Fi</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/vanzj.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <!--Mikrotik Script Start 1-->
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+        <!--Mikrotik Script stop 1-->
+
+        <div class="row text-center header">
+            <h4>Surf Wi-Fi</h4>
+        </div>
+
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">   
+                        $(if error)<div class="text-center text-danger" >$(error)</div>$(endif)  
+                        <div class="" id="paybill">
+                            <h5 class="text-center">
+                                <small><b>
+                                        LIPA NA M-PESA : BUY GOODS <br />
+                                        TILL NO: </b></small><b class="text-success">411 527</b> <small>[TIPSPESA SYSTEMS]</small>
+                            </h5>
+                            <h6>&nbsp;&nbsp;<u>Step by Step Guide</u></h6>   
+                            <ol>
+                                <li>Go to Mpesa menu</li>
+                                <li>Select <small><b>LIPA NA M-PESA</b></small></li>
+                                <li>Click on <small><b>BUY GOODS</b></small></li>
+                                <li>Enter <small><b>TILL NUMBER</b></small> as <b class="text-success">411 527</b></li>
+                                <li>Enter the Package amount you want to subscribe to<br />
+                                    <table class="table table-bordered table-condensed text-center">
+                                        <tr><th class="text-center">Package [3mbps]</th><th class="text-center">Amount</th></tr>
+                                        <tr><td>Daily</td><td>20</td></tr>
+                                        <tr><td>Weekly</td><td>120</td></tr>
+                                        <tr><td>Monthly</td><td>500</td></tr>
+                                    </table>
+                                </li>
+                                <li>Enter your Mpesa Pin and Confirm the request</li>
+                                <li>You will shortly receive an SMS from MPESA to confirm the transaction</li>
+                                <li>Enter the Phone Number you used to pay Below to Connect</li>
+                                <br />
+                                <input type="number" class="form-control" id="adphone" name="adphone" placeholder="Phone No. e.g 0712345678" />
+                                <h6 id="notice" class="text-center text-danger"></h6>
+                            </ol>
+                        </div>   
+                    </div>
+                    <hr />
+                    <h5 class="text-center">For Support Queries</h5>
+                    <ul class="list-unstyled text-center">
+                        <li><a href="https://wa.me/+254723111920" style="color: lightgreen;" target="_blank"><b><img src="img/whatsapp2.png" width="16" height="16" alt="whatsapp2.png" > Chat us on WhatsApp</b></a></li>
+                        <br />
+                        <li>Or Call us on <a href="tel:0723111920">0723 111 920</a></li>
+                        <br />
+                        <li class="text-muted"><a href="./terms.html">Terms and Conditions</a> apply</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--js-->
+        <script type="text/javascript" src="js/md5.js"></script>
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

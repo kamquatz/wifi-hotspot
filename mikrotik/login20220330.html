@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title">M-Tech WIFI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="theme-color" content="#d0d2d6" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bg.css">
+        <link rel="stylesheet" type="text/css" href="css/vanzj.css">
+        <style type="text/css">
+            body{
+                background-color: black;
+                color: black;
+            }
+            video {
+              /* override other styles to make responsive */
+              width: 100%    !important;
+              height: auto   !important;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="grid"></div>
+      <div class="bg" >
+          <script type="text/javascript" src="md5.js"></script>
+          <form name="sendin" action="$(link-login-only)" method="post">
+              <input type="hidden" name="username" />
+              <input type="hidden" name="password" />
+              <input type="hidden" name="dst" value="$(link-orig)" />
+              <input type="hidden" name="popup" value="true" />
+          </form>
+                <div id="main" class="main">
+                <div class="box">
+                     <img src="img/logo3.png" width="200" height="110" >
+                </div>
+                <div class="container" style="background-image: url('img/background.PNG'); background-repeat: no-repeat; color: black; font-weight: bold;">
+
+                    <!--Below line is the Running Banner Text-->
+                    <marquee HSPACE="-45" vspace="" behavior="" height="20" text-align=bottom><font color=black>
+                        <div>Watch below video to Enjoy FREE WIFI - Connect Button will appear after video has ended</div>
+                    </font></marquee>
+                    <!--Above line is the Running Banner Text-->
+                    <br>
+
+                    <video id="ad_video" controls muted defaultmuted playsinline>
+                        <source src="ads/vid.mp4" type="video/mp4">
+                    </video>
+                    <script>
+                        var ad_video = document.getElementById("ad_video");
+                        window.addEventListener("click", () => {
+                          ad_video.muted = !ad_video.muted;
+                        }, { once: true });
+
+                        ad_video.play();
+                        ad_video.onended = function() {
+                            document.getElementById("connect_btn_info").innerHTML = '';
+                            document.getElementById("submit_btn").style.visibility = 'visible';
+                        };
+                    </script>
+                    <br>
+                <form autocomplete="off" id="login" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                    $(endif)>
+                    <div class="blinking" id="infologin">Then Enter PhoneNumber and tap Connect</div>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+                    <input class="username" name="username" type="text" placeholder="PhoneNumber" minlength="10" maxlength="10" required />
+                    <input class="password" name="password" placeholder="Password" type="hidden" />
+                    <b id="connect_btn_info" style="color: red" ><br /><br />
+                        Connect Button will appear here when video ends
+                    </b>
+                    <button id="submit_btn" name="submit_btn" class="button" type="submit">Connect</button>
+                    $(if error)<br /><b class="notice" name="notice" id="notice" hidden />$(error)</b>$(endif)
+                </form>
+                    <script type="text/javascript">
+                      //  document.getElementById("submit_btn").style.visibility = 'hidden';
+                        document.login.username.focus();
+                        var username = document.login.username;
+                        var password = document.login.password;
+
+                        //set password = username
+                        username.onkeyup = function() {
+                            let phone = username.value.trim();
+                            password.value = phone;
+                            sessionStorage.setItem("phone",phone);
+                        };
+                    </script>
+                <div>
+                    <br />
+                    <!--Sliding Picture Start-->
+                    <div class="slidingImage">
+                        <div class="slider">
+                            <div class="slides">
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+                                <input type="radio" name="radio-btn" id="radio4">
+                                <input type="radio" name="radio-btn" id="radio5">
+
+                                <!-- 700 x 350 pixels .jpg -->
+                                <div class="slide first"><img src="ads/1.jpg"></div>
+                                <div class="slide"><img src="ads/2.jpg"></div>
+                                <div class="slide"><img src="ads/3.jpg"></div>
+                                <div class="slide"><img src="ads/4.jpg"></div>
+                                <div class="slide"><img src="ads/5.jpg"></div>
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                    <div class="auto-btn5"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <script type="text/javascript">
+                            var counter=1;
+                            setInterval(function(){
+                                document.getElementById('radio' + counter).checked =true;
+                                counter++;
+                                if (counter > 5){
+                                    counter = 1;
+                                    setInterval=1000;
+                                }
+                            },3000);
+                        </script>
+                    </div>
+                    <br>
+                    <div>
+                        <font class="blinking1" style="font-weight: bold">
+                            To advertise on the above space - video and images - contact 0793 711 418 / 0700 300 250</font>
+                    </div>
+            </div>
+            </div>
+            </div>
+          
+          <script type="text/javascript" src="js/jquery.min.js"></script>
+          <script type="text/javascript">
+                Retry();
+              
+                function doLogin() {                    
+                   let addUserEndpoint = 'http://172.20.20.56:8080/customer-add'
+                            +'?phone='+username.value
+                            +'&amount=0'
+                            +'&code='+hexMD5(Date.now()+username.value);
+                    $.get(addUserEndpoint, function(data, status){
+                        document.sendin.submit();
+                    });
+
+                    return false;
+                }
+
+              function Retry(){
+                let phone = sessionStorage.getItem("phone")!==null ? sessionStorage.getItem("phone") : '';
+                let amount = 0;
+
+                username.value = phone;
+                password.value = phone;
+
+                if(phone.length===10){
+                    document.sendin.username.value = document.login.username.value;
+                    document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                    let phone = sessionStorage.getItem("phone");
+                    document.sendin.submit();
+                    return false;
+                }else notice.innerHTML = ('Kindly Enter Valid Phone Number');
+              }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+#server
+sudo chmod 744 /apps/hotspot_premium/hotspot_premium.sh
+sudo chmod 664 /etc/systemd/system/hotspot_premium.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable hotspot_premium.service
+
+
+
+#mikrotik
+ip hotspot walled-garden add action=allow disabled=no dst-host=185.203.117.51
+/system scheduler add name="reboot-daily" start-date="jan/01/2022" start-time="23:59:59" interval="24h" on-event="/system reboot"
+
+#hotspot setup
+#dns server
+Clean Browsing Adult-Level
+185.228.168.10
+185.228.169.11
+
+

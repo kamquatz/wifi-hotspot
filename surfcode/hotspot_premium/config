@@ -1,0 +1,13 @@
+#global configurations
+app=hotspot_premium
+#database configuration
+db_host=localhost
+db_name=hotspot_premium
+db_user=dennis
+db_pass=Mmxsp65#
+#wifi packages
+daily=20
+weekly=120
+monthly=500
+#log path
+log=.

@@ -1,0 +1,1 @@
+ /ip hotspot walled-garden ip add action=accept disabled=no dst-host=*.multiplespacetechnologies.com

@@ -1,0 +1,18 @@
+#cmd.exe /K cd C:\hotspot_daemon\ & java -jar hotspot_daemon.jar
+#global configurations
+app=hotspot_daemon
+timer=1
+restart_interval_hours=1
+#mikrotik Configurations
+mikrotik_site=mradi
+mikrotik_host=172.20.20.1
+mikrotik_port=8728
+mikrotik_user=admin
+mikrotik_password=Lusaka@2022
+mikrotik_profile=default
+#remote database configuration
+get_customer_url=http://multiplespacetechnologies.com/admin/customer-get.php
+update_customer_url=http://multiplespacetechnologies.com/admin/customer-update.php
+bucket=100
+#log path
+log=.

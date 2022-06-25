@@ -1,0 +1,8 @@
+[Unit]
+Description=Tharaka Hotspot Daemon
+
+[Service]
+ExecStart=/apps/hotspots/tharaka/tharaka.sh start
+
+[Install]
+WantedBy=multi-user.target

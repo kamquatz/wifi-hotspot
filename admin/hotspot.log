@@ -1,0 +1,191 @@
+01-Jun-2022 08:18:6 INFO: Fetching active sites
+01-Jun-2022 08:18:7 INFO: Found site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:18:7 INFO: Found site :name=embu :host=197.248.91.71
+01-Jun-2022 08:18:7 INFO: hotspot : Thread[Thread-1,5,main] (state) >>>>>>> started
+01-Jun-2022 08:18:7 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> started
+01-Jun-2022 08:18:7 INFO: hotspot : Thread[Thread-1,5,main] (state) >>>>>>> processing
+01-Jun-2022 08:18:7 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> processing
+01-Jun-2022 08:18:8 INFO: Fetching expired devices
+01-Jun-2022 08:18:8 INFO: Fetching expired devices
+01-Jun-2022 08:18:8 INFO: Found device :phone=254721439671
+01-Jun-2022 08:18:8 INFO: Found device :phone=254796156892
+01-Jun-2022 08:18:8 INFO: Found device :phone=254757351033
+01-Jun-2022 08:18:8 INFO: Found device :phone=254706501361
+01-Jun-2022 08:18:8 INFO: Found device :phone=254707362722
+01-Jun-2022 08:18:8 INFO: Found device :phone=254732932345
+01-Jun-2022 08:18:8 INFO: Found device :phone=254707357496
+01-Jun-2022 08:18:8 INFO: Found device :phone=254724227136
+01-Jun-2022 08:18:8 INFO: Found device :phone=254732932343
+01-Jun-2022 08:18:8 INFO: Found device :phone=254701753442
+01-Jun-2022 08:18:8 INFO: Found device :phone=254799939166
+01-Jun-2022 08:18:8 INFO: Found device :phone=254726724879
+01-Jun-2022 08:18:8 INFO: Found device :phone=254729027650
+01-Jun-2022 08:18:8 INFO: Found device :phone=254728636783
+01-Jun-2022 08:18:8 INFO: Found device :phone=254714819391
+01-Jun-2022 08:18:8 INFO: Found device :phone=254707173740
+01-Jun-2022 08:18:8 INFO: Found device :phone=254727355082
+01-Jun-2022 08:18:8 INFO: Found device :phone=254740212535
+01-Jun-2022 08:18:8 INFO: Found device :phone=254712271110
+01-Jun-2022 08:18:8 INFO: Found device :phone=254768198029
+01-Jun-2022 08:18:8 INFO: Found device :phone=254715800977
+01-Jun-2022 08:18:8 INFO: Found device :phone=254742330771
+01-Jun-2022 08:18:8 INFO: Found device :phone=254702862928
+01-Jun-2022 08:18:8 INFO: Found device :phone=254717509052
+01-Jun-2022 08:18:8 INFO: Found device :phone=254741113053
+01-Jun-2022 08:18:8 INFO: Found device :phone=254758834036
+01-Jun-2022 08:18:8 INFO: Found device :phone=254728294448
+01-Jun-2022 08:18:8 INFO: Found device :phone=254757135445
+01-Jun-2022 08:18:8 INFO: Found device :phone=254196452369
+01-Jun-2022 08:18:8 INFO: Found device :phone=254175432657
+01-Jun-2022 08:18:8 INFO: Found device :phone=254740212538
+01-Jun-2022 08:18:8 INFO: Found device :phone=254110359417
+01-Jun-2022 08:18:8 INFO: Found device :phone=254724227139
+01-Jun-2022 08:18:8 INFO: Found device :phone=254115432657
+01-Jun-2022 08:18:8 INFO: Found device :phone=254704417880
+01-Jun-2022 08:18:8 INFO: Found device :phone=254710983799
+01-Jun-2022 08:18:8 INFO: updated device :phone=254742330771
+01-Jun-2022 08:18:8 INFO: updated device :phone=254721439671
+01-Jun-2022 08:18:9 INFO: removed hotspot user :phone=254742330771
+01-Jun-2022 08:18:9 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> sleep : 1 minutes
+01-Jun-2022 08:18:10 INFO: removed hotspot user :phone=254721439671
+01-Jun-2022 08:18:10 INFO: updated device :phone=254796156892
+01-Jun-2022 08:18:11 INFO: removed hotspot user :phone=254796156892
+01-Jun-2022 08:18:11 INFO: updated device :phone=254757351033
+01-Jun-2022 08:18:13 INFO: removed hotspot user :phone=254757351033
+01-Jun-2022 08:18:13 INFO: updated device :phone=254706501361
+01-Jun-2022 08:18:14 INFO: removed hotspot user :phone=254706501361
+01-Jun-2022 08:18:14 INFO: updated device :phone=254707362722
+01-Jun-2022 08:18:16 INFO: removed hotspot user :phone=254707362722
+01-Jun-2022 08:18:16 INFO: updated device :phone=254732932345
+01-Jun-2022 08:18:17 INFO: Incoming request :phone=254758834036 :site=tharaka :station=tharaka
+01-Jun-2022 08:18:17 INFO: Linking site
+01-Jun-2022 08:18:17 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:18:17 INFO: Found station :station=tharaka
+01-Jun-2022 08:18:17 INFO: Added device to database :phone=254758834036
+01-Jun-2022 08:18:17 INFO: Incoming request :phone=254758834036 :site=tharaka :station=tharaka
+01-Jun-2022 08:18:17 INFO: Linking site
+01-Jun-2022 08:18:17 INFO: removed hotspot user :phone=254732932345
+01-Jun-2022 08:18:17 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:18:17 INFO: updated device :phone=254707357496
+01-Jun-2022 08:18:17 INFO: Found station :station=tharaka
+01-Jun-2022 08:18:17 INFO: Added device to database :phone=254758834036
+01-Jun-2022 08:18:18 INFO: removed hotspot user :phone=254707357496
+01-Jun-2022 08:18:19 INFO: updated device :phone=254724227136
+01-Jun-2022 08:18:19 SEVERE: com.surfcode.mikrotik.core.ApiConnectionException: Error connecting to 197.156.141.34:8729 : connect timed out
+01-Jun-2022 08:18:19 INFO: updated station :station=tharaka
+01-Jun-2022 08:18:19 SEVERE: com.surfcode.mikrotik.core.ApiConnectionException: Error connecting to 197.156.141.34:8729 : connect timed out
+01-Jun-2022 08:18:20 INFO: updated station :station=tharaka
+01-Jun-2022 08:18:20 INFO: removed hotspot user :phone=254724227136
+01-Jun-2022 08:18:20 INFO: updated device :phone=254732932343
+01-Jun-2022 08:18:21 INFO: removed hotspot user :phone=254732932343
+01-Jun-2022 08:18:21 INFO: updated device :phone=254701753442
+01-Jun-2022 08:18:22 INFO: removed hotspot user :phone=254701753442
+01-Jun-2022 08:18:22 INFO: updated device :phone=254799939166
+01-Jun-2022 08:18:24 INFO: removed hotspot user :phone=254799939166
+01-Jun-2022 08:18:24 INFO: updated device :phone=254726724879
+01-Jun-2022 08:18:25 INFO: removed hotspot user :phone=254726724879
+01-Jun-2022 08:18:25 INFO: updated device :phone=254729027650
+01-Jun-2022 08:18:27 INFO: removed hotspot user :phone=254729027650
+01-Jun-2022 08:18:27 INFO: updated device :phone=254728636783
+01-Jun-2022 08:18:28 INFO: removed hotspot user :phone=254728636783
+01-Jun-2022 08:18:28 INFO: updated device :phone=254714819391
+01-Jun-2022 08:18:30 INFO: removed hotspot user :phone=254714819391
+01-Jun-2022 08:18:30 INFO: updated device :phone=254707173740
+01-Jun-2022 08:18:31 INFO: removed hotspot user :phone=254707173740
+01-Jun-2022 08:18:31 INFO: updated device :phone=254727355082
+01-Jun-2022 08:18:32 INFO: removed hotspot user :phone=254727355082
+01-Jun-2022 08:18:33 INFO: updated device :phone=254740212535
+01-Jun-2022 08:18:34 INFO: removed hotspot user :phone=254740212535
+01-Jun-2022 08:18:34 INFO: updated device :phone=254712271110
+01-Jun-2022 08:18:36 INFO: removed hotspot user :phone=254712271110
+01-Jun-2022 08:18:36 INFO: updated device :phone=254768198029
+01-Jun-2022 08:18:37 INFO: removed hotspot user :phone=254768198029
+01-Jun-2022 08:18:37 INFO: updated device :phone=254715800977
+01-Jun-2022 08:18:39 INFO: removed hotspot user :phone=254715800977
+01-Jun-2022 08:18:39 INFO: updated device :phone=254702862928
+01-Jun-2022 08:18:40 INFO: removed hotspot user :phone=254702862928
+01-Jun-2022 08:18:40 INFO: updated device :phone=254717509052
+01-Jun-2022 08:18:42 INFO: removed hotspot user :phone=254717509052
+01-Jun-2022 08:18:42 INFO: updated device :phone=254741113053
+01-Jun-2022 08:18:43 INFO: removed hotspot user :phone=254741113053
+01-Jun-2022 08:18:43 INFO: updated device :phone=254758834036
+01-Jun-2022 08:18:44 INFO: removed hotspot user :phone=254758834036
+01-Jun-2022 08:18:44 INFO: updated device :phone=254728294448
+01-Jun-2022 08:18:46 INFO: removed hotspot user :phone=254728294448
+01-Jun-2022 08:18:46 INFO: updated device :phone=254757135445
+01-Jun-2022 08:18:47 INFO: removed hotspot user :phone=254757135445
+01-Jun-2022 08:18:47 INFO: updated device :phone=254196452369
+01-Jun-2022 08:18:48 INFO: removed hotspot user :phone=254196452369
+01-Jun-2022 08:18:48 INFO: updated device :phone=254175432657
+01-Jun-2022 08:18:50 INFO: removed hotspot user :phone=254175432657
+01-Jun-2022 08:18:50 INFO: Incoming request :phone=254758834036 :site=tharaka :station=tharaka
+01-Jun-2022 08:18:50 INFO: Linking site
+01-Jun-2022 08:18:50 INFO: Incoming request :phone=254758834036 :site=tharaka :station=tharaka
+01-Jun-2022 08:18:50 INFO: Linking site
+01-Jun-2022 08:18:50 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:18:50 INFO: updated device :phone=254740212538
+01-Jun-2022 08:18:50 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:18:50 INFO: Found station :station=tharaka
+01-Jun-2022 08:18:50 INFO: Found station :station=tharaka
+01-Jun-2022 08:18:50 INFO: Added device to database :phone=254758834036
+01-Jun-2022 08:18:50 INFO: Added device to database :phone=254758834036
+01-Jun-2022 08:18:51 INFO: removed hotspot user :phone=254740212538
+01-Jun-2022 08:18:51 INFO: updated device :phone=254110359417
+01-Jun-2022 08:18:52 SEVERE: com.surfcode.mikrotik.core.ApiConnectionException: Error connecting to 197.156.141.34:8729 : connect timed out
+01-Jun-2022 08:18:52 INFO: updated station :station=tharaka
+01-Jun-2022 08:18:52 INFO: Added hotspot user :phone=254758834036 :uptime=0d 00:30:00
+01-Jun-2022 08:18:52 INFO: updated station :station=tharaka
+01-Jun-2022 08:18:53 INFO: removed hotspot user :phone=254110359417
+01-Jun-2022 08:18:53 INFO: updated device :phone=254724227139
+01-Jun-2022 08:18:54 INFO: removed hotspot user :phone=254724227139
+01-Jun-2022 08:18:54 INFO: updated device :phone=254115432657
+01-Jun-2022 08:18:56 INFO: removed hotspot user :phone=254115432657
+01-Jun-2022 08:18:56 INFO: updated device :phone=254704417880
+01-Jun-2022 08:18:57 INFO: removed hotspot user :phone=254704417880
+01-Jun-2022 08:18:57 INFO: updated device :phone=254710983799
+01-Jun-2022 08:18:59 INFO: removed hotspot user :phone=254710983799
+01-Jun-2022 08:18:59 INFO: hotspot : Thread[Thread-1,5,main] (state) >>>>>>> sleep : 1 minutes
+01-Jun-2022 08:19:9 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> processing
+01-Jun-2022 08:19:10 INFO: Fetching expired devices
+01-Jun-2022 08:19:10 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> sleep : 1 minutes
+01-Jun-2022 08:19:59 INFO: hotspot : Thread[Thread-1,5,main] (state) >>>>>>> processing
+01-Jun-2022 08:19:59 INFO: Fetching expired devices
+01-Jun-2022 08:19:59 INFO: Found device :phone=254732932342
+01-Jun-2022 08:19:59 INFO: updated device :phone=254732932342
+01-Jun-2022 08:20:1 INFO: removed hotspot user :phone=254732932342
+01-Jun-2022 08:20:1 INFO: hotspot : Thread[Thread-1,5,main] (state) >>>>>>> sleep : 1 minutes
+01-Jun-2022 08:20:10 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> processing
+01-Jun-2022 08:20:11 INFO: Fetching expired devices
+01-Jun-2022 08:20:11 INFO: hotspot : Thread[Thread-2,5,main] (state) >>>>>>> sleep : 1 minutes
+01-Jun-2022 08:20:28 INFO: Incoming request :phone=254718620092 :site=tharaka :station=tharaka
+01-Jun-2022 08:20:28 INFO: Linking site
+01-Jun-2022 08:20:28 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:20:28 INFO: Found station :station=tharaka
+01-Jun-2022 08:20:28 INFO: Added device to database :phone=254718620092
+01-Jun-2022 08:20:30 SEVERE: com.surfcode.mikrotik.core.ApiConnectionException: Error connecting to 197.156.141.34:8729 : connect timed out
+01-Jun-2022 08:20:30 INFO: updated station :station=tharaka
+01-Jun-2022 08:20:36 INFO: Incoming request :phone=254718620092 :site=tharaka :station=tharaka
+01-Jun-2022 08:20:36 INFO: Linking site
+01-Jun-2022 08:20:36 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:20:36 INFO: Found station :station=tharaka
+01-Jun-2022 08:20:37 INFO: Added device to database :phone=254718620092
+01-Jun-2022 08:20:38 INFO: Found hotspot :user=tag=2, data={password=254718620092, limit-uptime=30m, packets-out=75254, profile=default, name=254718620092, packets-in=37141, .id=*37B8, dynamic=false, disabled=false, bytes-out=99025241, bytes-in=3184963, uptime=30m}
+01-Jun-2022 08:20:39 INFO: Removed hotspot user :phone=254718620092
+01-Jun-2022 08:20:39 INFO: Added hotspot user :phone=254718620092 :uptime=0d 00:30:00
+01-Jun-2022 08:20:39 INFO: updated station :station=tharaka
+01-Jun-2022 08:20:40 INFO: Incoming request :phone=254743361959 :site=tharaka :station=tharaka
+01-Jun-2022 08:20:40 INFO: Linking site
+01-Jun-2022 08:20:40 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:20:40 INFO: Found station :station=tharaka
+01-Jun-2022 08:20:40 INFO: Added device to database :phone=254743361959
+01-Jun-2022 08:20:42 INFO: Found hotspot :user=tag=2, data={password=254743361959, limit-uptime=30m, packets-out=142297, profile=default, name=254743361959, packets-in=103301, .id=*3785, dynamic=false, disabled=false, bytes-out=193055499, bytes-in=8269421, uptime=30m}
+01-Jun-2022 08:20:42 INFO: Removed hotspot user :phone=254743361959
+01-Jun-2022 08:20:42 INFO: Added hotspot user :phone=254743361959 :uptime=0d 00:30:00
+01-Jun-2022 08:20:43 INFO: updated station :station=tharaka
+01-Jun-2022 08:20:44 INFO: Incoming request :phone=254716809687 :site=tharaka :station=tharaka
+01-Jun-2022 08:20:44 INFO: Linking site
+01-Jun-2022 08:20:44 INFO: Linked site :name=tharaka :host=197.156.141.34
+01-Jun-2022 08:20:44 INFO: Found station :station=tharaka
+01-Jun-2022 08:20:44 INFO: Added device to database :phone=254716809687
+01-Jun-2022 08:20:47 INFO: Added hotspot user :phone=254716809687 :uptime=0d 00:30:00
+01-Jun-2022 08:20:47 INFO: updated station :station=tharaka

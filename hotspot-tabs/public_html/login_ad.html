@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title">M-Tech WIFI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="theme-color" content="#d0d2d6" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style_old.css">
+        <link rel="stylesheet" href="css/bg.css">
+        <link rel="stylesheet" type="text/css" href="css/vanzj.css">
+        <style type="text/css">
+            body{
+                background-color: black;
+                color: black;
+            }
+            video {
+              /* override other styles to make responsive */
+              width: 100%    !important;
+              height: auto   !important;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="grid"></div>
+      <div class="bg" >
+          <script type="text/javascript" src="md5.js"></script>
+          <form name="redirect" action="http://multiplespacetechnologies.com/admin/user-add.php" method="post">
+            <input type="hidden" name="phone">
+            <input type="hidden" name="password">
+            <input type="hidden" name="link-login" value="$(link-login)">
+            <input type="hidden" name="link-orig" value="$(link-orig)">
+            <input type="hidden" name="error" value="$(error)">
+          </form>
+          <form name="sendin" action="$(link-login-only)" method="post">
+              <input type="hidden" name="username" />
+              <input type="hidden" name="password" />
+              <input type="hidden" name="dst" value="$(link-orig)" />
+              <input type="hidden" name="popup" value="true" />
+          </form>
+                <div id="main" class="main">
+                <div class="box">
+                     <img src="img/logo3.png" width="200" height="110" >
+                </div>
+                <div class="container" style="background-image: url('img/background.PNG'); background-repeat: no-repeat; color: black; font-weight: bold;">
+
+                    <!--Below line is the Running Banner Text-->
+                    <marquee HSPACE="-45" vspace="" behavior="" height="20" text-align=bottom><font color=black>
+                        <div style="color: navy">To advertise on the below space - contact 0793 711 418 / 0700 300 250. Enjoy Unlimited Super Fast WIFI Hotspot!</div>
+                    </font></marquee>
+                    <!--Above line is the Running Banner Text-->
+                    <br>
+
+                    <video id="ad_video" controls muted defaultmuted playsinline>
+                        <source src="ads/vid.mp4" type="video/mp4">
+                    </video>
+                    <script>
+                        var ad_video = document.getElementById("ad_video");
+                        window.addEventListener("click", () => {
+                          ad_video.muted = !ad_video.muted;
+                        }, { once: true });
+
+                        ad_video.play();
+                    </script>
+                    <br>
+                <form autocomplete="off" id="login" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                    $(endif)>
+                    <div class="blinking" id="infologin">Enter PhoneNumber and tap Connect</div>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+                    <input class="username" name="username" type="text" placeholder="PhoneNumber" minlength="10" maxlength="10" required />
+                    <input class="password" name="password" placeholder="Password" type="hidden" />
+                    <button id="submit_btn" name="submit_btn" class="button" type="submit">Connect</button>
+					<div style="background-color: lightgreen; color: black;">
+						Subscribe to a Package from below<br />
+						PAYBILL Number: <b>8044637</b>.<br />
+						Account No. is Your Phone Number<br />
+						Then Retry Connecting<br />
+					</div>
+                </form>
+                <div>
+                    <br />
+                    <table class="table3">
+                        <caption style="font-size: 16px; font-weight: bold;"><u>OUR WIFI PACKAGE RATES</u></caption>
+                        <tr>
+                            <th width="33%">Package</th>
+                            <th width="33%">Time</th>
+                            <th width="33%">Price</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Daily</td>
+                            <td>Ksh. 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Weekly</td>
+                            <td>Ksh. 120.00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Monthly</td>
+                            <td>Ksh. 500.00</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div>
+                        <font class="blinking1" style="font-weight: bold; color: navy">
+                            To advertise on the above space - contact 0793 711 418 / 0700 300 250
+                        </font><br />
+                        <small style="font-size: smaller;">
+                            By Connecting to M-Tech WIFI I agree to M-Tech WIFI <a href="#">Terms and Conditions</a>
+                        </small>
+                    </div>
+            </div>
+            </div>
+            </div>
+          
+          <script type="text/javascript" src="js/jquery.min.js"></script>
+          <script type="text/javascript">   
+                document.login.username.focus();
+                var username = document.login.username;
+                var password = document.login.password;
+
+                //set password = username
+                username.onkeyup = function() {
+                    let phone = username.value.trim();
+                    password.value = phone;
+                    sessionStorage.setItem("phone",phone);
+                };
+
+                function doLogin() {
+                    document.redirect.phone.value = document.login.username.value;
+                    document.redirect.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                    sessionStorage.setItem("retry",1);
+                    document.redirect.submit();
+                    return false;
+                }
+
+                var notice = document.getElementById('notice').innerHTML;
+                if(sessionStorage.getItem("retry")) Retry();
+                else if(notice){
+                    username.value = sessionStorage.getItem("phone");
+                   // document.getElementById('notice').innerHTML = "";
+                }                
+
+                function Retry(){
+                    let phone = sessionStorage.getItem("phone")!==null ? sessionStorage.getItem("phone") : '';
+
+                    username.value = phone;
+                    password.value = phone;
+
+                    if(phone.length===10){
+                        document.sendin.username.value = document.login.username.value;
+                        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                        let phone = sessionStorage.getItem("phone");
+                        document.sendin.submit();
+                        sessionStorage.removeItem("retry")
+                        return false;
+                    }else notice.innerHTML = ('Kindly Enter Valid Phone Number');
+                }
+          </script>
+    </body>
+</html>

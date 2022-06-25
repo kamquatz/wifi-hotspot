@@ -1,0 +1,8 @@
+[Unit]
+Description=Hotspot Daemon
+
+[Service]
+ExecStart=/apps/hotspot/hotspot.sh start
+
+[Install]
+WantedBy=multi-user.target

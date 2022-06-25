@@ -1,0 +1,15 @@
+/ppp profile add name="RWB_sstp_profile" use-mpls=default use-compression=default use-encryption=default only-one=default change-tcp-mss=yes use-upnp=default address-list="" on-up="" on-down=""
+
+/interface sstp-client add connect-to=vpn3.remotewinbox.com:443 profile="RWB_sstp_profile" disabled=no name=RemoteWinboxVPN3 password="C2nFOLRlwcval8HVagJHpliKqfLEec" user="JaDigFeYp0QOurO" comment="Remote Winbox connection for Sydney_2011"
+
+:if ([:len [/ip firewall filter find where chain=input and action=drop]] >0) do={ \
+[/ip firewall filter add action=accept chain=input comment="Allow Remote Winbox" in-interface=RemoteWinboxVPN3 place-before=1]\
+} else={ \
+[/ip firewall filter add action=accept chain=input comment="Allow Remote Winbox" in-interface=RemoteWinboxVPN3]}
+
+/user add name=a20eidb6POYOKDr password=ZbM5z2zInfJ6sjv4qj2exb7PFF1f6u group=full address=10.0.0.0/8,172.16.0.0/12,192.168.0.0/16 comment="Remote Winbox user"
+
+/log info "Remote Winbox configuration added!"
+
+
+

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hotspot-adv">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/hotspot-adv.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

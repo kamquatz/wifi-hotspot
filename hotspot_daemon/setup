@@ -1,0 +1,14 @@
+sudo chmod 744 /apps/hotspots/tharaka/tharaka.sh
+sudo chmod 664 /etc/systemd/system/tharaka.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable tharaka.service
+
+
+
+sudo chmod 744 /apps/hotspot/hotspot.sh
+sudo chmod 664 /etc/systemd/system/hotspot.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable hotspot.service
+

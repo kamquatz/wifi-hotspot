@@ -1,0 +1,11 @@
+#global configurations
+app=hotspot
+timer=1
+#remote database configuration
+db_host=185.203.117.51
+db_name=hotspot
+db_user=dennis
+db_pass=Mmxsp65#
+bucket=10
+#log path
+log=.
